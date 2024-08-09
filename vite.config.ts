@@ -16,7 +16,8 @@ export default defineConfig({
       resolvers: [ElementPlusResolver()],
     }),
   ],
-  // 配置别名(通用路径)
+
+  // 配置别名(通用路径) @符号对应的就是冒号后的路径
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
@@ -28,3 +29,6 @@ export default defineConfig({
     port: 8888,
   },
 });
+// console.log(import.meta.url);
+// console.log(new URL("./src", import.meta.url));
+// console.log(fileURLToPath(new URL("./src", import.meta.url)));

@@ -7,7 +7,7 @@ const router = createRouter({
     {
       path: "/",
       //   component: () => import("../views/layout.vue"),
-      redirect: "/layout", // 导航守卫
+      redirect: "/login", // 导航守卫
     },
     {
       path: "/login",
